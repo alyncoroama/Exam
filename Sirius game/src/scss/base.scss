@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import "variables.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  user-select: none;
+  height: 100%;
+  color: $beige;
+  background-color: #000000;
+  font-family:"Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  margin-bottom:50px;
+}
+
+#videoImage {
+  width: 900px;
+  position: fixed;
+  height: 900px;
+  background: url("../../static/poster.jpg") no-repeat 170%;
+  background-size: 140% 100%;
+}
+@media(min-width: 2000px) {
+  //4k Resolution 
+  p {
+    font-size: 2.5em;
+  }
+  footer p {
+    font-size: 18px;
+  }
+  #initial button:first-child {
+    font-size: 140px !important;
+  }
+  header #navBar {
+    max-height: 160px;
+  }
+  #logo {
+    max-height: 140px;
+  }
+  #initial button {
+    margin: auto;
+    font-size: 50px;
+  }
+  #initial {
+    margin-top: 40vh;
+  }
+  #play #secondGroup #AI {
+    width: 445px !important;
+    height: 125px !important;  
+  }
+  .MuiTypography-body1 {
+    font-size: 2em !important;
+  }
+  #play #secondGroup .MuiFormControlLabel-root,
+  #play #firstGroup .MuiFormControlLabel-root {
+    width: 290px !important;
+    height: 165px;
+  }
+  #playGround .MuiButton-label {
+    font-size: 1.5em;
+  }
+}

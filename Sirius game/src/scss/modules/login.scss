@@ -1,0 +1,36 @@
+@import "../variables.scss";
+
+
+form {
+  text-align: center;
+  height: 260px;
+  margin: auto;
+  width: fit-content;
+  padding-top: 100px;
+  p, label, input {
+  color: $beige !important;
+  }
+  div, button {
+    margin: auto !important;
+    margin-bottom: 10px !important;
+    p {
+      text-align: center !important;
+      width: fit-content !important;
+      margin: 10px auto 10px auto !important;
+    }
+  }
+  input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+ }
+  div {
+    display: flex !important;
+    width: 170px !important;
+  }
+  fieldset {
+    border-color: $beige !important;
+  }
+  .MuiInput-underline:after {
+    border-bottom: 2px solid $beige;
+  }
+}
